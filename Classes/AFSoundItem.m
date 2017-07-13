@@ -71,13 +71,13 @@
                 _artist = (NSString *)metadataItem.value;
             } else if ([metadataItem.commonKey isEqualToString:@"artwork"]) {
                 
-                if ([metadataItem.keySpace isEqualToString:AVMetadataKeySpaceID3]) {
-                    
-                    _artwork = [UIImage imageWithData:[[metadataItem.value copyWithZone:nil] objectForKey:@"data"]];
-                } else if ([metadataItem.keySpace isEqualToString:AVMetadataKeySpaceiTunes]) {
-                    
-                    _artwork = [UIImage imageWithData:[metadataItem.value copyWithZone:nil]];
-                }
+//                if ([metadataItem.keySpace isEqualToString:AVMetadataKeySpaceID3]) {
+//                    
+//                    _artwork = [UIImage imageWithData:[[metadataItem.value copyWithZone:nil] objectForKey:@"data"]];
+//                } else if ([metadataItem.keySpace isEqualToString:AVMetadataKeySpaceiTunes]) {
+//                    
+//                    _artwork = [UIImage imageWithData:[metadataItem.value copyWithZone:nil]];
+//                }
             }
         }];
     }
